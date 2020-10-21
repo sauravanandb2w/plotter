@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./Mystyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body style="background-color: gray;">
+    <span>
+        <div class="left">
+            <div class="container-fluid">
+                <div class="row">
+                    <form id="firstForm" style="margin-left: 10vw;margin-right: 10vw;margin-top: 20vh;">
+                            <div class="form-row align-items-center">
+                                <div class="form-group col-md-20 my-1">
+                                    <label for="X" style="font-weight: 700">Choose X-Label</label>
+                                    <select id="x_axis" name="x" class="form-control">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row align-items-center" style="padding-top: 2.5cm;" >
+                                <div class="form-group col-md-20 my-1">
+                                    <label for="Y" style="font-weight: 700">Choose Y-Label</label>
+                                    <select id="y_axis" name="y" class="form-control">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row align-items-center" style="padding-top: 2.5cm;">
+                                <div class="form-group col-md-20 my-1 "  >
+                                    <button type="submit" style="color:black;font-weight: 700;"
+                                        class="btn btn-success btn-sm">Draw Graph</button>
+                                </div>
+                            </div>
+
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+                <svg id="mysvg" height = 100vh width = 100vw style="background-color: #b3cde0;">
+
+                </svg>
+            </div>
+        </div>
+    </span>
+</body>
+
+</html>
