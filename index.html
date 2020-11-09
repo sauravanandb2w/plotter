@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="./Mystyle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
 </head>
 
 <body style="background-color: gray;">
@@ -12,23 +14,49 @@
         <div class="left">
             <div class="container-fluid">
                 <div class="row">
-                    <form id="firstForm" style="margin-left: 10vw;margin-right: 10vw;margin-top: 20vh;">
-                            <div class="form-row align-items-center">
+                    <form id="firstForm" style="margin-left: 10vw;margin-top: 2vh;">
+                            
                                 <div class="form-group col-md-20 my-1">
                                     <label for="X" style="font-weight: 700">Choose X-Label</label>
-                                    <select id="x_axis" name="x" class="form-control">
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row align-items-center" style="padding-top: 2.5cm;" >
-                                <div class="form-group col-md-20 my-1">
-                                    <label for="Y" style="font-weight: 700">Choose Y-Label</label>
-                                    <select id="y_axis" name="y" class="form-control">
+                                    <select id="x_axis" name="x" class="form-control" multiple>
+                                        <option value="a">A</option>
+                                        <option value="b">B</option>
+                                        <option value="c">C</option>
+                                        <option value="d">D</option>
+                                        <option value="e">E</option>
+                                        <option value="f">F</option>
+
 
                                     </select>
                                 </div>
-                            </div>
-                            <div class="form-row align-items-center" style="padding-top: 2.5cm;">
+                                
+                            
+                            
+                                <div class="form-group col-md-20 my-1">
+                                    <label for="Y" style="font-weight: 700">Choose Y-Label</label>
+                                    <select id="y_axis" name="y" class="form-control">
+                                        <option value="p">P</option>
+                                        <option value="q">Q</option>
+                                        <option value="r">R</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <h2 style="align-self: center;">Filters</h2>
+                                    <label for="who" style="font-weight: 700">Who</label>
+                                    <select id="who" name="who" class="form-control">
+                                        <option value="p">X</option>
+                                        <option value="q">Y</option>
+                                        <option value="r">Z</option>
+                                    </select><br>
+                                    <h4>Date</h4>
+                                    <label for="from" style="font-weight: 700">from</label>
+                                    <input type="date" id="from" name="from"><br>
+                                    <label for="to" style="font-weight: 700">to</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="date" id="to" name="to">
+                
+                                </div>
+                            <div class="form-row align-items-center" style="padding-top: 0.5cm;">
                                 <div class="form-group col-md-20 my-1 "  >
                                     <button type="submit" style="color:black;font-weight: 700;"
                                         class="btn btn-success btn-sm">Draw Graph</button>
@@ -37,15 +65,21 @@
 
                         </form>
                 </div>
+                </div>
             </div>
-        </div>
-        <div class="right">
-                <svg id="mysvg" height = 100vh width = 100vw style="background-color: #b3cde0;">
 
-                </svg>
+
+            
+        
+        <div class="right">
+            
+                <svg  id= "mysvg" height = 100vh width = 100vw style="background-color: #b3cde0;">
+                      
+                    </svg>
             </div>
         </div>
     </span>
+      <script src="./myjsfile.js"></script>
 </body>
 
 </html>
